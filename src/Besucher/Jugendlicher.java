@@ -4,7 +4,7 @@ public class Jugendlicher extends Besucher{
 
     private static int counterJugendliche = 0;
     public Jugendlicher(){
-        super();
+        super(15);
         int preis = 7;
         ++counterJugendliche;
         gesamteEinnahmenBesucher += preis;

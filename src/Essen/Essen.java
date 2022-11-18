@@ -1,9 +1,6 @@
 package Essen;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Random;
+import java.util.*;
 
 public class Essen {
     private String name;
@@ -42,5 +39,37 @@ public class Essen {
 
     public String getName() {
         return name;
+    }
+
+    public static void getEssenÜbersicht(){
+        HashMap<String, Integer> ausgabeMap = new HashMap<>();
+        System.out.println("ESSEN");
+        System.out.println("Gesamtzahl: "+Essen.essenArrayList.size());
+        for (String s1:essenArrayList) {
+            int counter = 0;
+            for (String s2: essenArrayList) {
+                if (s1.equals(s2)){
+                    ++counter;
+                }
+            }
+            ausgabeMap.put(s1, counter);
+            //System.out.println(s1+"\t\t"+counter);
+        }
+        ausgabeMap.forEach((k,v)->{
+            StringBuilder sb = new StringBuilder();
+            sb.append(k);
+            for(int i = k.length(); i < 25; i++){
+                sb.append(".");
+            }
+            if (v>10){
+                sb.append("..").append(v);
+            } else if(v>100){
+                sb.append(".").append(v);
+            } else {
+                sb.append(v);
+            }
+            System.out.println(sb);
+        });
+        System.out.println("==============================");
     }
 }

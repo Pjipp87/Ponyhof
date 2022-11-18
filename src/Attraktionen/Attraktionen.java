@@ -35,7 +35,8 @@ public class Attraktionen {
         gesamtEinnahmenAttraktionen += Attraktionen.Attractionen.values()[randomNum].getPreis();
     }
     public static void getAttraktionÜbersicht(){
-        System.out.println("Übersicht Attraktionen: ");
+        System.out.println("Attraktionen: ".toUpperCase());
+        System.out.println("Gesamtzahl: "+ Attraktionen.attraktionenListe.size());
         for (Attractionen a: Attractionen.values()) {
             if(a.getCounter()>0){
                 StringBuilder sb = new StringBuilder();

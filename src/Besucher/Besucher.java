@@ -11,7 +11,7 @@ public class Besucher {
     public static ArrayList<Besucher> besucherListe = new ArrayList<Besucher>();
     public static int gesamteEinnahmenBesucher = 0;
 
-    protected Besucher(){
+    protected Besucher(int j){
         besucherListe.add(this);
         Random counter = new Random();
         for (int i = 0; i < 3; i++){
@@ -20,6 +20,24 @@ public class Besucher {
         for(int i = 0; i < counter.nextInt(2,5); i++){
             new Essen();
         }
+    }
+
+
+    public static void starteTag(){
+        Random r = new Random();
+        int counter = r.nextInt(150,251);
+        for (int i = 0; i< counter;i++){
+
+            int besucherCase = r.nextInt(1,6);
+            switch (besucherCase) {
+                case 1 -> new Erwachsene();
+                case 2 -> new Kind();
+                case 3 -> new Jugendlicher();
+                case 4 -> new Student();
+                case 5 -> new Rentner();
+            }
+        }
+
     }
 
     public static void getBesucher(){
@@ -46,6 +64,7 @@ public class Besucher {
     }
 
     public static void getBesucher2(){
+
         System.out.println("BESUCHER:");
         System.out.println("Gesamtzahl:\t\t" + besucherListe.size());
         System.out.println(Kind.getCounts());
