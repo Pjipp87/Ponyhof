@@ -24,6 +24,7 @@ public class Besucher {
 
 
     public static void starteTag(){
+        System.out.println();
         Random r = new Random();
         int counter = r.nextInt(150,251);
         for (int i = 0; i< counter;i++){

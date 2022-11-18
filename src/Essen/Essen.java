@@ -58,12 +58,8 @@ public class Essen {
         ausgabeMap.forEach((k,v)->{
             StringBuilder sb = new StringBuilder();
             sb.append(k);
-            for(int i = k.length(); i < 25; i++){
-                sb.append(".");
-            }
-            if (v>10){
-                sb.append("..").append(v);
-            } else if(v>100){
+            sb.append(".".repeat(Math.max(0, 25 - k.length())));
+            if (v<=99){
                 sb.append(".").append(v);
             } else {
                 sb.append(v);
