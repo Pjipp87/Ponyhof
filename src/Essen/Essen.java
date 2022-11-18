@@ -2,17 +2,39 @@ package Essen;
 
 import java.util.*;
 
+
+/**
+ * Klasse zum Erstellen und Abrufen von Essen-Objekten
+ *
+ * @author Pascal jipp<br>
+ * <br>
+ * {@see <a href="http://www.github.com/scarfaceHBC">Pascal Jipp</a>}
+ */
 public class Essen {
-    public static HashMap<String, Integer> essenListe = new HashMap<>();
+
+    /**
+     * Hashmap, die Key-Value-Paare aus Name es Essens und dessen Preis aufnimmt
+     */
     public static HashMap<String, Integer> essenMap = new HashMap<>();
+
+    /**
+     * ArrayListe, die Namen der Mahlzeiten aufnimmt
+     */
     public static ArrayList<String> essenArrayList = new ArrayList<>();
+
+    /**
+     * Speichert die Gesatsumme der verkauften Mahlzeiten
+     */
     public static int gesamtEinnahmenEssen;
 
-    protected Essen(String name, int preis){
-        essenListe.put(name, preis);
-        gesamtEinnahmenEssen += preis;
-    }
-
+    /**
+     * <p>Erstellt ein Essen - Objekt aus den übergebenen Parameter und speichert dieses in essenListe.</p>
+     * <p>Addiert ausserdem den übergebenen Preis auf die gesamtEinnahmenEssen</p>
+     * <hr>
+     * <p>Mehr Infos:</p>
+     * {@link Essen#essenMap essenMap}<br>
+     * {@link Essen#gesamtEinnahmenEssen gesamtEinnahmenEssen}
+     */
     public Essen(){
         fuelleMap();
         int r = new Random().nextInt(0, 8);
@@ -20,6 +42,13 @@ public class Essen {
         gesamtEinnahmenEssen += (int) essenMap.values().toArray()[r];
     }
 
+
+    /**
+     * Füllt die essenMap mit Key-Value Paaren aus Name des Essens und dem Preis
+     * <hr>
+     * <p>Mehr Infos:</p>
+     * {@link Essen#essenMap essenMap}
+     */
     private void fuelleMap(){
         essenMap.put("Wasser", 2);
         essenMap.put("Limo", 3);
@@ -32,7 +61,15 @@ public class Essen {
     }
 
 
-
+    /**
+     * Ausgabe sämtlicher Daten zum Essen.
+     * Es wird die gesamtzahl der verzehrten Mahlzeiten aufgeführt.
+     * Ausserdem wird zu jedem Essen ausgegeben, wie oft es verkauft wurde
+     * <hr>
+     * <p>Mehr Infos:</p>
+     * {@link Essen#essenMap essenMap}<br>
+     * {@link Essen#gesamtEinnahmenEssen gesamtEinnahmenEssen}
+     */
     public static void essenUebersicht(){
         HashMap<String, Integer> ausgabeMap = new HashMap<>();
         System.out.println("ESSEN");
@@ -45,7 +82,6 @@ public class Essen {
                 }
             }
             ausgabeMap.put(s1, counter);
-            //System.out.println(s1+"\t\t"+counter);
         }
         ausgabeMap.forEach((k,v)->{
             StringBuilder sb = new StringBuilder();
