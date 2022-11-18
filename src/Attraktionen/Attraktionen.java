@@ -1,7 +1,5 @@
 package Attraktionen;
 
-import Essen.Essen;
-
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -47,7 +45,16 @@ public final class Attraktionen {
 
     }
 
-// FEhlt
+    /**
+     * Ausgabe sämtlicher Daten zu den Attraktionen.
+     * Es wird die gesamtnutzung der Attraktionen aufgeführt.
+     * Ausserdem wird zu jeder Attraktion ausgegeben, wie oft sie genutzt wurde
+     * <hr>
+     * <p>Mehr Infos:</p>
+     * {@link Attractionen Attraction}<br>
+     * {@link Attraktionen#attraktionenListe attraktionenListe}<br>
+     * {@link Attraktionen#gesamtEinnahmenAttraktionen gesamtEinnahmenAttraktonen}
+     */
     public void attraktionUebersicht(){
         System.out.println("Attraktionen: ".toUpperCase());
         System.out.println("Gesamtzahl: "+ Attraktionen.attraktionenListe.size());
