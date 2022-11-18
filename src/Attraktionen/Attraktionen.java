@@ -3,8 +3,22 @@ package Attraktionen;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * Klasse zum Erstellen und Abrufen von Attraktion-Objekten
+ * Objekte werden automatisch zu einer ArrayList hinzugefügt<br>
+ * {@link Attraktionen#gesamtEinnahmenAttraktionen gemsamtEinnahmenAttraktion}<br>
+ * Der Gesamtnpreis wird automatisch berechnet.<br>
+ * {@link Attraktionen#attraktionenListe attraktionListe<br>}
+ *
+ * @author Pascal jipp<br>
+ * <br>
+ * {@see <a href="http://www.github.com/scarfaceHBC">Pascal Jipp</a>}
+        */
 public final class Attraktionen {
 
+    /**
+     * Speichert die Gesamtsumme der Einnahmen durch die Attraktionen
+     */
     public static int gesamtEinnahmenAttraktionen = 0;
     public static ArrayList<Attractionen> attraktionenListe = new ArrayList<>();
 
