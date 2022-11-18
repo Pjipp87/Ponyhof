@@ -28,6 +28,7 @@ Currywurst		4 Euro
 Pommes			2 Euro
 Veganer Wrap		5 Euro
 
+--------
 Ein paar Eckdaten
 =================
 Täglich kommen zwischen 150 und 250 ZUFÄLLIGE Besucher.
@@ -44,6 +45,8 @@ Am Ende eines Tages willst Du wissen
 ====================================
 - wie viele Besucher INSGESAMT da waren.
 - wie viele Besucher aus der jeweiligen Kategorie da waren (Erwachsene, Kinder..)
+
+
 - wie viele Attraktionen genutzt wurden
 - welche Attraktionen genutzt wurden
 - welche Speisen und Getränke in welcher Menge verzehrt wurden
