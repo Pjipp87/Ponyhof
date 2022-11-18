@@ -24,6 +24,7 @@ public class Besucher {
 
 
     public static void starteTag(){
+
         System.out.println();
         Random r = new Random();
         int counter = r.nextInt(150,251);
@@ -38,10 +39,13 @@ public class Besucher {
                 case 5 -> new Rentner();
             }
         }
-
+        getBesucher();
+        new Attraktionen().attraktionUebersicht();
+        Essen.essenUebersicht();
+        finanzen();
     }
 
-    public static void getBesucher2(){
+    public static void getBesucher(){
 
         System.out.println("BESUCHER:");
         System.out.println("Gesamtzahl:\t\t" + besucherListe.size());
@@ -51,6 +55,20 @@ public class Besucher {
         System.out.println(Erwachsene.getCounts());
         System.out.println(Student.getCounts());
         System.out.println("==============================");
+    }
+
+
+    /**
+     * Gibt die gesamten Einnahmen,
+     * sowie die Einnahmen durch Besucher, Attraktionen und Nahrungsmittel aus
+     */
+    static void finanzen(){
+        System.out.println("EINNAHMEN");
+        System.out.println("Besucher:\t\t"+Besucher.gesamteEinnahmenBesucher+" €");
+        System.out.println("Attraktionen:\t"+Attraktionen.gesamtEinnahmenAttraktionen+" €");
+        System.out.println("Essen:\t\t\t"+Essen.gesamtEinnahmenEssen+ " €");
+        System.out.println("______________________________");
+        System.out.println("Gesamt:\t\t\t"+(Essen.gesamtEinnahmenEssen+Attraktionen.gesamtEinnahmenAttraktionen+Besucher.gesamteEinnahmenBesucher)+" €");
     }
 
 }
