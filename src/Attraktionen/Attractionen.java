@@ -1,5 +1,16 @@
 package Attraktionen;
 
+
+/**
+ * Enum mit den möglichen Attraktionen<br>
+ * Jede Konstante steht für eine Attraktion und hat zwei Parameter. Der erste Parameter ist für den Preis. Der Zweite
+ * Parameter ist der Zähler, die oft die Attraktion genutzt wurde.
+ * <br>
+ *
+ * @author Pascal jipp<br>
+ * <br>
+ * {@see <a href="http://www.github.com/scarfaceHBC">Pascal Jipp</a>}
+        */
 public enum Attractionen {
     PLANWAGENFAHRT(7, 0),
     PONYREITEN(5,0),

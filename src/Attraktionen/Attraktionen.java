@@ -13,13 +13,17 @@ import java.util.Random;
  * @author Pascal jipp<br>
  * <br>
  * {@see <a href="http://www.github.com/scarfaceHBC">Pascal Jipp</a>}
-        */
+ */
 public final class Attraktionen {
 
     /**
      * Speichert die Gesamtsumme der Einnahmen durch die Attraktionen
      */
     public static int gesamtEinnahmenAttraktionen = 0;
+
+    /**
+     * ArrayListe die jedes erstelle Attraction-Objekt aufnimmt
+     */
     public static ArrayList<Attractionen> attraktionenListe = new ArrayList<>();
 
 
