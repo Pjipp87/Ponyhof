@@ -3,8 +3,6 @@ package Essen;
 import java.util.*;
 
 public class Essen {
-    private String name;
-    private int preis;
     public static HashMap<String, Integer> essenListe = new HashMap<>();
     public static HashMap<String, Integer> essenMap = new HashMap<>();
     public static ArrayList<String> essenArrayList = new ArrayList<>();
@@ -33,15 +31,9 @@ public class Essen {
         essenMap.put("Veganer Wrap", 5);
     }
 
-    public int getPreis() {
-        return preis;
-    }
 
-    public String getName() {
-        return name;
-    }
 
-    public static void getEssenÜbersicht(){
+    public static void essenUebersicht(){
         HashMap<String, Integer> ausgabeMap = new HashMap<>();
         System.out.println("ESSEN");
         System.out.println("Gesamtzahl: "+Essen.essenArrayList.size());

@@ -5,7 +5,7 @@ public class Erwachsene extends Besucher{
     private static int counterErwachsene = 0;
 
     public Erwachsene(){
-        super(15);
+        super();
         int preis = 15;
         gesamteEinnahmenBesucher += preis;
         ++counterErwachsene;

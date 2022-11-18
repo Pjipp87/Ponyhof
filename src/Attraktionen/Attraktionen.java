@@ -3,7 +3,9 @@ package Attraktionen;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Attraktionen {
+public final class Attraktionen {
+
+
     public enum Attractionen {
         PLANWAGENFAHRT(7, 0),
         PONYREITEN(5,0),
@@ -17,16 +19,17 @@ public class Attraktionen {
         public int getPreis(){
             return preis;
         }
-        public int getCounter(){return counter;};
-        public void setCounter(){this.counter += 1;};
+        public int getCounter(){return counter;}
+        public void setCounter(){this.counter += 1;}
 
         Attractionen(int preis, int counter) {
             this.preis = preis;
+            this.counter = counter;
         }
     }
     public static int gesamtEinnahmenAttraktionen = 0;
     public static ArrayList<Attractionen> attraktionenListe = new ArrayList<>();
-    private final String name;
+
 
     public Attraktionen(){
         Random r = new Random();
@@ -34,18 +37,16 @@ public class Attraktionen {
         attraktionenListe.add(Attraktionen.Attractionen.values()[randomNum]);
         Attraktionen.Attractionen.values()[randomNum].setCounter();
         gesamtEinnahmenAttraktionen += Attraktionen.Attractionen.values()[randomNum].getPreis();
-        this.name = Attraktionen.Attractionen.values()[randomNum].toString();
+
     }
-    public static void getAttraktionÜbersicht(){
+    public static void attraktionUebersicht(){
         System.out.println("Attraktionen: ".toUpperCase());
         System.out.println("Gesamtzahl: "+ Attraktionen.attraktionenListe.size());
         for (Attractionen a: Attractionen.values()) {
             if(a.getCounter()>0){
                 StringBuilder sb = new StringBuilder();
-                sb.append(a.toString());
-                for(int i = a.toString().length(); i <25; i++){
-                    sb.append(".");
-                }
+                sb.append(a);
+                sb.append(".".repeat(Math.max(0, 25 - a.toString().length())));
                 if (a.getCounter()>10) {
                     sb.append(".");
                     sb.append(a.getCounter());
@@ -60,7 +61,4 @@ public class Attraktionen {
         System.out.println("==============================");
     }
 
-    public String getName() {
-        return name;
-    }
 }

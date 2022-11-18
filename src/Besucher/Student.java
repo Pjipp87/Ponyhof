@@ -4,7 +4,7 @@ public class Student extends Besucher{
 
     private static int counterStudents = 0;
     public Student(){
-        super(15);
+        super();
         int preis = 9;
         gesamteEinnahmenBesucher += preis;
         ++counterStudents;
