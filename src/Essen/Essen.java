@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * Klasse zum Erstellen und Abrufen von Essen-Objekten
  *
- * @author Pascal jipp<br>
+ * @author Pascal Jipp<br>
  * <br>
  * {@see <a href="http://www.github.com/scarfaceHBC">Pascal Jipp</a>}
  */

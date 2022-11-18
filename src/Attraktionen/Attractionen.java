@@ -6,7 +6,7 @@ package Attraktionen;
  * Jede Konstante steht für eine Attraktion und hat zwei Parameter. Der erste Parameter ist für den Preis. Der Zweite
  * Parameter ist der Zähler, die oft die Attraktion genutzt wurde.
  * <br>
- * @author Pascal jipp<br>
+ * @author Pascal Jipp<br>
  * <br>
  * {@see <a href="http://www.github.com/scarfaceHBC">Pascal Jipp</a>}
         */

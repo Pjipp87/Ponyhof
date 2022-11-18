@@ -10,7 +10,7 @@ import java.util.Random;
  * Der Gesamtnpreis wird automatisch berechnet.<br>
  * {@link Attraktionen#attraktionenListe attraktionListe<br>}
  *
- * @author Pascal jipp<br>
+ * @author Pascal Jipp<br>
  * <br>
  * {@see <a href="http://www.github.com/scarfaceHBC">Pascal Jipp</a>}
  */
