@@ -22,7 +22,7 @@ public final class Attraktionen {
     public static int gesamtEinnahmenAttraktionen = 0;
 
     /**
-     * ArrayListe die jedes erstelle Attraction-Objekt aufnimmt
+     * ArrayListe die jedes erstellte Attraction-Objekt aufnimmt
      */
     public static ArrayList<Attractionen> attraktionenListe = new ArrayList<>();
 
