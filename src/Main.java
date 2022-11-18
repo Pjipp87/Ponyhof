@@ -4,6 +4,10 @@ import Essen.*;
 
 public class Main {
 
+    /**
+     * Gibt die gesamten Einnahmen,
+     * sowie die Einnahmen durch Besucher, Attraktionen und Nahrungsmittel aus
+     */
     static void finanzen(){
         System.out.println("EINNAHMEN");
         System.out.println("Besucher:\t\t"+Besucher.gesamteEinnahmenBesucher);
