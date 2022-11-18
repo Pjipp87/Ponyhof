@@ -23,7 +23,7 @@ public class Essen {
     public static ArrayList<String> essenArrayList = new ArrayList<>();
 
     /**
-     * Speichert die Gesatsumme der verkauften Mahlzeiten
+     * Speichert die Gesamtsumme der verkauften Mahlzeiten
      */
     public static int gesamtEinnahmenEssen;
 
