@@ -1,5 +1,7 @@
 package Attraktionen;
 
+import Essen.Essen;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -27,6 +29,15 @@ public final class Attraktionen {
     public static ArrayList<Attractionen> attraktionenListe = new ArrayList<>();
 
 
+    /**
+     * <p>Erstellt ein Attraktion - Objekt aus dem Attraction Enum und speichert sie in die attraktionListe</p>
+     * <p>Addiert ausserdem den übergebenen Preis auf die gesamtEinnahmenAttraktionen</p>
+     * <hr>
+     * <p>Mehr Infos:</p>
+     * {@link Attractionen Attraction}<br>
+     * {@link Attraktionen#attraktionenListe attraktionenListe}<br>
+     * {@link Attraktionen#gesamtEinnahmenAttraktionen gesamtEinnahmenAttraktonen}
+     */
     public Attraktionen(){
         Random r = new Random();
         int randomNum = r.nextInt(0, Attractionen.values().length-1);
@@ -35,6 +46,8 @@ public final class Attraktionen {
         gesamtEinnahmenAttraktionen += Attractionen.values()[randomNum].getPreis();
 
     }
+
+// FEhlt
     public void attraktionUebersicht(){
         System.out.println("Attraktionen: ".toUpperCase());
         System.out.println("Gesamtzahl: "+ Attraktionen.attraktionenListe.size());
