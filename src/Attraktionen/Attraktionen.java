@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Attraktionen {
-    public static enum Attractionen {
+    public enum Attractionen {
         PLANWAGENFAHRT(7),
         PONYREITEN(5),
-        HÜHNER_FÜTTERN(2),
+        HUEHNER_FUETTERN(2),
         BROT_BACKEN(5),
         STREICHELZOO(3);
 
@@ -17,12 +17,12 @@ public class Attraktionen {
             return preis;
         }
 
-        private Attractionen(int preis) {
+        Attractionen(int preis) {
             this.preis = preis;
         }
     }
     public static int gesamtEinnahmenAttraktionen = 0;
-    public static ArrayList<Attractionen> attraktionenListe = new ArrayList<Attractionen>();
+    public static ArrayList<Attractionen> attraktionenListe = new ArrayList<>();
 
     public Attraktionen(){
         Random r = new Random();
