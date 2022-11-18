@@ -47,8 +47,6 @@ Am Ende eines Tages willst Du wissen
 - wie viele Besucher aus der jeweiligen Kategorie da waren (Erwachsene, Kinder..)
 - wie viele Attraktionen genutzt wurden
 - welche Attraktionen genutzt wurden
-
-
 - welche Speisen und Getränke in welcher Menge verzehrt wurden
 - Einnahmen aus Eintrittspreisen
 - Einnahmen aus Attraktionen
