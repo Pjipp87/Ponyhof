@@ -6,6 +6,7 @@ import Essen.Essen;
 import java.util.ArrayList;
 import java.util.Random;
 
+
 public class Besucher {
 
     public static ArrayList<Besucher> besucherListe = new ArrayList<>();
