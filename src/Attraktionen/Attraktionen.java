@@ -26,6 +26,7 @@ public class Attraktionen {
     }
     public static int gesamtEinnahmenAttraktionen = 0;
     public static ArrayList<Attractionen> attraktionenListe = new ArrayList<>();
+    private final String name;
 
     public Attraktionen(){
         Random r = new Random();
@@ -33,6 +34,7 @@ public class Attraktionen {
         attraktionenListe.add(Attraktionen.Attractionen.values()[randomNum]);
         Attraktionen.Attractionen.values()[randomNum].setCounter();
         gesamtEinnahmenAttraktionen += Attraktionen.Attractionen.values()[randomNum].getPreis();
+        this.name = Attraktionen.Attractionen.values()[randomNum].toString();
     }
     public static void getAttraktionÜbersicht(){
         System.out.println("Attraktionen: ".toUpperCase());
@@ -58,4 +60,7 @@ public class Attraktionen {
         System.out.println("==============================");
     }
 
+    public String getName() {
+        return name;
+    }
 }
